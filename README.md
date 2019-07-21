@@ -8,8 +8,14 @@ install
 
 usage
 	copy the taro-expo to project root folder
-	override the project's package.json by package-taro.json
+
+	adjust package.json of project
+        add "dev:rn:expo":"concurrently \"sleep 6 && npm run build:rn -- --watch > .rn_temp/bin/tmp\" \"node taro-expo/taro-expo && cd .rn_temp && yarn && expo start\"" to scripts section.
+
+        add "fs-extra": "*" to dependencies section
+
 	yarn
+
 	run the commond "yarn dev:rn:expo"
 
 ```

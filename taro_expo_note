@@ -1,0 +1,26 @@
+install
+    npm install -g @tarojs/cli@1.2.26
+
+    npm install -g expo-cli
+
+    install Exponent-2.11.4.apk
+
+
+adjust
+	.tn_temp
+	    repalce expo-crna-entry.js by expo-crna-entry.js
+	    repalce package.json by package.json
+	    repalce app.json by app.json
+
+	project
+		repalce package.json by package-taro.json
+
+install
+    npm install -g @tarojs/cli@1.2.26
+    npm install -g expo-cli
+    install Exponent-2.11.4.apk
+
+use
+	copy the taro_expo_note to project root folder
+	override the project's package.json by package-taro.json
+	run the commond "yarn dev:rn:expo"

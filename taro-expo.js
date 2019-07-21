@@ -31,9 +31,9 @@ const interval = setInterval(() => {
 				fs.writeFileSync(flagPath, flagFlag)
 				clearInterval(interval)
 
-				fs.copySync(path.join(appPath, '/use-expo/expo-crna-entry.js'), path.join(appPath, '/.rn_temp/bin/expo-crna-entry.js'))
-				fs.copySync(path.join(appPath, '/use-expo/package.json'), path.join(appPath, '/.rn_temp/package.json'))
-				fs.copySync(path.join(appPath, '/use-expo/app.json'), path.join(appPath, '/.rn_temp/app.json'))
+				fs.copySync(path.join(appPath, '/taro-expo/expo-crna-entry.js'), path.join(appPath, '/.rn_temp/bin/expo-crna-entry.js'))
+				fs.copySync(path.join(appPath, '/taro-expo/package.json'), path.join(appPath, '/.rn_temp/package.json'))
+				fs.copySync(path.join(appPath, '/taro-expo/app.json'), path.join(appPath, '/.rn_temp/app.json'))
 			}
 	  	}
 	})

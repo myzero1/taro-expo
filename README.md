@@ -12,7 +12,7 @@ usage
 	adjust package.json of project
         add "dev:rn:expo":"concurrently \"sleep 6 && npm run build:rn -- --watch > .rn_temp/bin/tmp\" \"node taro-expo/taro-expo && cd .rn_temp && yarn && expo start\"" to scripts section.
 
-        add "fs-extra": "*" to dependencies section
+        add "fs-extra": "*" and "concurrently": "*" to dependencies section
 
 	yarn
 
